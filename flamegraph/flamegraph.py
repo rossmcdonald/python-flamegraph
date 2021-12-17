@@ -159,7 +159,7 @@ def main():
       elapsed_time = time.perf_counter() - start_time
     else:
       elapsed_time = time.clock() - start_time
-    thread.start()
+
     print('Elapsed Time: %2.2f seconds.  Collected %d stack frames (%d unique)'
         % (elapsed_time, thread.num_frames(), thread.num_frames(unique=True)))
 
